@@ -1,0 +1,5 @@
+datasets
+pinecone
+python-dotenv
+openai
+weaviate-client
