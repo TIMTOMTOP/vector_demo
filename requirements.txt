@@ -3,3 +3,8 @@ pinecone
 python-dotenv
 openai
 weaviate-client
+langchain
+langchain-community 
+langchain-openai
+langgraph
+langchain_anthropic
