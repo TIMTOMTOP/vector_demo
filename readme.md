@@ -2,6 +2,38 @@
 
 A simple demonstration comparing Pinecone and Weaviate vector stores using OpenAI embeddings.
 
+## Project Structure
+```
+.
+├── data/
+│   ├── cat_facts.txt          # Sample dataset of cat facts
+│   ├── passages.json          # Additional text passages for vector store
+│   └── question_answer.json   # Q&A pairs for testing
+├── notebooks/
+│   ├── agents/               # Agent-based implementations
+│   │   ├── langchain.ipynb   # LangChain agent with routing
+│   │   └── claude.ipynb      # Claude-based intelligent agent
+│   └── vector_stores/        # Vector store implementations
+│       ├── pinecone.ipynb    # Pinecone vector store demo
+│       └── weaviate.ipynb    # Weaviate vector store demo
+└── requirements.txt          # Project dependencies
+```
+
+## Features
+
+### Vector Stores (`notebooks/vector_stores/`)
+- Implementations using both Pinecone and Weaviate
+- Vector similarity search demonstrations
+- OpenAI embeddings integration
+- Basic RAG (Retrieval-Augmented Generation) examples
+
+### Intelligent Agents (`notebooks/agents/`)
+- LangChain-based routing system
+- Claude integration for advanced reasoning
+- Hybrid search capabilities
+- Tool-based interaction patterns
+
+
 ## Setup
 
 1. Create and activate virtual environment:
