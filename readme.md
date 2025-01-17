@@ -4,20 +4,29 @@ A simple demonstration comparing Pinecone and Weaviate vector stores using OpenA
 
 ## Project Structure
 ```
+```
 .
 ├── data/
 │   ├── cat_facts.txt          # Sample dataset of cat facts
 │   ├── passages.json          # Additional text passages for vector store
 │   └── question_answer.json   # Q&A pairs for testing
 ├── notebooks/
-│   ├── agents/               # Agent-based implementations
-│   │   ├── langchain.ipynb   # LangChain agent with routing
-│   │   └── claude.ipynb      # Claude-based intelligent agent
-│   └── vector_stores/        # Vector store implementations
-│       ├── pinecone.ipynb    # Pinecone vector store demo
-│       └── weaviate.ipynb    # Weaviate vector store demo
-└── requirements.txt          # Project dependencies
+│   ├── agents/                # Agent-based implementations
+│   │   ├── langchain.ipynb    # LangChain agent with routing
+│   │   └── claude.ipynb       # Claude-based intelligent agent
+│   ├── chatbot/               # Chatbot implementations
+│   │   ├── vector_store.ipynb # Document vectorization
+│   │   ├── agent.ipynb        # RAG agent with Claude
+│   │   ├── OpenAI/            # OpenAI text for DB
+│   │   └── Anthropic/         # Anthropic text for DB
+│   └── vector_stores/         # Vector store implementations
+│       ├── pinecone.ipynb     # Pinecone vector store demo
+│       └── weaviate.ipynb     # Weaviate vector store demo
+└── requirements.txt           # Project dependencies
 ```
+```
+
+
 
 ## Features
 
@@ -33,6 +42,11 @@ A simple demonstration comparing Pinecone and Weaviate vector stores using OpenA
 - Hybrid search capabilities
 - Tool-based interaction patterns
 
+### Chatbot (`notebooks/chatbot/`)
+- Document chunking and vectorization
+- RAG together with docuemnt retrieval implementation with Claude 
+- Tool-use capabilities
+- Provider-specific examples for OpenAI and Anthropic
 
 ## Setup
 
