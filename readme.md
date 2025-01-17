@@ -3,8 +3,8 @@
 A simple demonstration comparing Pinecone and Weaviate vector stores using OpenAI embeddings.
 
 ## Project Structure
-```
-```
+
+```bash
 .
 ├── data/
 │   ├── cat_facts.txt          # Sample dataset of cat facts
@@ -24,7 +24,7 @@ A simple demonstration comparing Pinecone and Weaviate vector stores using OpenA
 │       └── weaviate.ipynb     # Weaviate vector store demo
 └── requirements.txt           # Project dependencies
 ```
-```
+
 
 
 
